@@ -1,0 +1,15 @@
+
+section {
+    width: 100%;
+    /* background-color:#FF7E6E; */
+    display: flex;
+    justify-content: center;
+}
+
+
+img {
+    width: 40%;
+    mix-blend-mode: luminosity 	;
+    display: none;
+
+}

@@ -1,0 +1,38 @@
+
+/* Aiming to implement em into margin and padding,
+I will use em or percentages for widths and rem for font size */
+nav {
+    font-size: 2rem;
+    padding: 1em 0 1em 0;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+    color:rgb(240, 240, 240);
+    
+}
+
+.nav-container{
+    margin: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-container ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-container ul li{
+    display: flex;
+    align-items: center;
+    padding-right: .5em;
+    margin: 0;
+}
