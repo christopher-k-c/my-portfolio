@@ -2,23 +2,23 @@
 /* Aiming to implement em into margin and padding,
 I will use em or percentages for widths and rem for font size */
 nav {
-    font-size: 2rem;
+    font-family: 'inter';
     padding: 1em 0 1em 0;
     width: 100%;
-    background-color: rgb(23, 23, 23);
-    color:rgb(240, 240, 240);
-    
+    /* background-color: rgb(23, 23, 23); */
+    color:rgb(1, 4, 37);
 }
 
 .nav-container{
     margin: auto;
-    max-width: 80%;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
 }
 
 nav h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    font-weight: 800;
     padding: 0;
     margin: 0;
 }
@@ -33,6 +33,8 @@ nav .nav-container ul{
 nav .nav-container ul li{
     display: flex;
     align-items: center;
-    padding-right: .5em;
+    padding-left: 2rem;
     margin: 0;
+    font-size: 1.3rem;
+    font-weight: light;
 }

@@ -8,7 +8,7 @@ export default function Footer() {
     
     <footer> 
       <div className='footer-container'>
-        Made by C.K.Carey 
+        {/* Made by C.K.Carey  */}
       </div>
     </footer>
     </>

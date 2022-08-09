@@ -8,11 +8,12 @@ export default function Navigation() {
     <nav>
 
     <div className='nav-container'>
-    <h1>Christopher Carey</h1>
+    <h1>CHRISTOPHER CAREY</h1>
     
     <ul>
-      <li>Projects</li>
       <li>About</li>
+      <li>Projects</li>
+      <li>Experience</li>
       <li>Contact</li>
     </ul>
     </div>
