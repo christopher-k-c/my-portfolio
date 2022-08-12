@@ -1,7 +1,7 @@
 import React from 'react'
 import './landing.css'
-// import Portrait from './assets/41990035.jpg'
 import Portrait from './assets/portrait-with-filter-01.jpg'
+import SquarePortrait from './assets/square-portrait.jpg'
 
 
 
@@ -20,8 +20,9 @@ export default function Landing() {
           <div className="closing-rectangle"></div>
         </div>
         <div className="col col-image">
-        <div className="closing-rectangle-two"></div>
-          <img src={Portrait} alt="portrait" />
+          <div className="closing-rectangle-two"></div>
+          <img className="portrait-img" src={Portrait} alt="portrait" />
+          <img className="square-image" src={SquarePortrait} alt="square_portrait" />
         </div>
       </div>
 

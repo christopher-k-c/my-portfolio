@@ -2,7 +2,8 @@
 import './App.css';
 import Footer from './navigation/Footer'
 import Navigation from './navigation/Navigation'
-import Landing from './pages/landing/Landing.jsx'
+
+
 function App() {
   return (
 
@@ -10,8 +11,8 @@ function App() {
       
 
       <Navigation></Navigation>
-      <Landing></Landing>
-      <Footer></Footer>
+
+      <Footer></Footer> 
 
     </div>
   );
