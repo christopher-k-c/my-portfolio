@@ -18,7 +18,7 @@ export default function Navigation() {
       <Router>
         <nav >
           <div className='nav-container'>
-            <Link to="/"  ><h1>CHRISTOPHER CAREY</h1></Link>
+            <Link to="/my-portfolio"  ><h1>CHRISTOPHER CAREY</h1></Link>
             <ul>
               <Link to="/about"><li>About</li></Link>
               <Link to="/projects"><li>Projects</li></Link>
@@ -28,7 +28,7 @@ export default function Navigation() {
           </div>
         </nav>
           <Routes>
-            <Route path="/" element={<Landing />}></Route>
+            <Route path="/my-portfolio" element={<Landing />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/projects" element={<Projects />}></Route>
             <Route path="/experience" element={<Experience />}></Route>
