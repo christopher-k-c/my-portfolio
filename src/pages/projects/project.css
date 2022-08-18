@@ -8,7 +8,7 @@
     /* Display horizontally */
     flex-direction: row;
 
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
 
     /* position: relative; */
 
@@ -51,6 +51,7 @@ flex-direction: row-reverse;
     width: 800px;
 
 }
+
 
 
 .project-container:nth-child(odd){
@@ -130,7 +131,7 @@ p:hover{
     justify-content: center;
     align-items: center;
 
-    background: radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0.4), rgba(102, 83, 255, 0.6)), url(https://grainy-gradients.vercel.app/noise.svg);     
+    background: radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0.4), rgba(22, 18, 55, 0.6)), url(https://grainy-gradients.vercel.app/noise.svg);     
     filter: contrast(120%) brightness(100%);
     }
 
@@ -186,4 +187,11 @@ p:hover{
     }
     
 
+}
+
+
+@media (max-width: 405px) {
+    .description-container h1{
+        font-size: 3rem;
+    }
 }
