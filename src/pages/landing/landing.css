@@ -153,6 +153,7 @@
     .col-image{
         filter:none;
         display:inline-block;
+        z-index: -1;
   
     }
 

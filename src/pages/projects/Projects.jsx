@@ -1,8 +1,27 @@
 import React from 'react'
 import './projects.css'
+import Project from './Project'
 
-export default function Projects() {
+export default function Projects(props) {
+
+
+// console.log(typeof(props.allProjects))
+
   return (
-    <div>Projects Page</div>
+    <>
+    
+    
+
+
+
+<Project></Project>
+
+
+      
+
+
+    
+    
+    </>
   )
 }
