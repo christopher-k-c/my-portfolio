@@ -27,7 +27,7 @@ export default function Navigation() {
           <Link to="/my-portfolio"  ><h1>CHRISTOPHER CAREY</h1></Link>
             <ul className="hide-desktop-links">
                 <Link to="/about"><li >About</li></Link>
-                <Link to="/projects"><li>Projects</li></Link>
+                <Link to="/projects"><li href="#projects">Projects</li></Link>
                 <Link to="/experience"><li>Experience</li></Link>
                 <Link to="/contact"><li>Contact</li></Link>
             </ul>

@@ -10,7 +10,7 @@ export default function Project() {
     // Create an array of objects containing each project and it's respective information
     const projectsArray = [
 
-      {'name': 'Bootleg Bill', 'git': 'https://github.com/christopher-k-c/SEI-64_PROJECT_FOUR_FRONT-END', 'image': ImgFour, 'description': 'Over the course of 9 days, through harnessing the MERN Stack, and as a group of three, we built an ecommerce inspired store front for bootlegged cassette tapes. '},
+      {'name': 'Bootleg Bill', 'git': 'https://github.com/christopher-k-c/SEI-64_PROJECT_FOUR_FRONT-END', 'site': 'https://bootlegbills.herokuapp.com/index', 'image': ImgFour, 'description': 'Over the course of 9 days, through harnessing the MERN Stack, and as a group of three, we built an ecommerce inspired store front for bootlegged cassette tapes. '},
       {'name': 'The Phonograph', 'git': 'https://github.com/christopher-k-c/SEI-64_PROJECT_THREE/tree/main/thephonograph','image': ImgThree, 'description': 'Inspired by Discogs.com, the full-stack record collection app was built in 4 days on a Django Framework, connected to a PostgreSQL database which utilised vanilla CSS, Tailwind and JavaScript to style its front-end. '},
       {'name': 'Inventory Control App', 'git': 'https://github.com/christopher-k-c/SEI-64_PROJECT_TWO','image': ImgTwo, 'description': 'We set out to develop an inventory control web application in 4 days with full CRUD operations, User Authentication and Association.'},
       {"name": "Tic Tac Toe", 'git': 'https://github.com/christopher-k-c/SEI-64_PROJECT_ONE','image': ImgOne, 'description': 'This project was built with HTML, CSS, JavaScript, JQuery and the SweetAlert Library. This app was my first experience programming in javascript and the project took 4 days to complete.'}
@@ -31,10 +31,11 @@ export default function Project() {
         <div className="image-container">
 
           <a href={project.git}>
-            <span className="image-text-overlay">{project.name}</span>
+            <span className="image-text-overlay"></span>
+            
             <img src={project.image} alt="project"/>
           </a>
-
+          
           
         
         </div>

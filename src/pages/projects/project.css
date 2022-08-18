@@ -11,6 +11,8 @@
     margin-bottom: 2rem;
 
     /* position: relative; */
+
+    
 }
 
 
@@ -18,16 +20,23 @@
 
 display: flex;
 flex-direction: row-reverse;
+/* background-color: rgb(82, 23, 23); */
+
 }
 
 .image-container{
     position: relative;
 }
 
+.image-container-two{
+    position: relative;
+}
+
 .image-container img{
-    /* max-width: 60%; */
-    width: 500px;
-    /* overflow:hidden; */
+
+    width: 100%;
+    height: auto;
+
     
 
     
@@ -38,31 +47,38 @@ flex-direction: row-reverse;
 .description-container{
 
     padding-left: 1rem;
-    /* background-color: rgb(82, 23, 23); */
+    
+    width: 800px;
+
+}
+
+
+.project-container:nth-child(odd){
+
+    padding-left: 2rem;
+
 }
 
 .image-container{
     /* position: relative; */
-    background-color: rgba(102, 83, 255);;
+    background-color: rgb(3, 3, 3, 1);
+
 
 }
 
 .image-container a{
 
     background-color: white;
-    height: 300px;
+
 }
 
-/* .image-container img:hover{
 
-    opacity: 0.8;
-    
-
-} */
 
 .image-container a:hover{
 
-    opacity: 0.8;
+    opacity: 0.3;
+
+    
     
 
 }
@@ -76,7 +92,7 @@ flex-direction: row-reverse;
 
 .description-container h1{
     font-family: 'inter';
-    font-size: 2em;
+    font-size: 5em;
     font-weight: 800;
     color: rgba(102, 83, 255);
 }
@@ -84,9 +100,10 @@ flex-direction: row-reverse;
 p{
 
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: 1.5rem;
+    font-weight: 800;
     color: #525252;
+    padding-right: 2rem;
 }
 
 p:hover{
@@ -100,8 +117,8 @@ p:hover{
     /* bottom: -200%; */
     left: 0%;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.819);
+    height: 99.6%;
+    /* background-color: rgba(0, 0, 0, 0.819); */
     /* font-family: 'inter'; */
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 800;
@@ -112,10 +129,20 @@ p:hover{
     text-align: center;
     justify-content: center;
     align-items: center;
+
+    background: radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0.4), rgba(102, 83, 255, 0.6)), url(https://grainy-gradients.vercel.app/noise.svg);     
+    filter: contrast(120%) brightness(100%);
     }
 
 
+    /* .image-text-overlay:hover{
+     display: none;   
+    } */
+
+
     @media (max-width: 860px) {
+
+        /* This stops images from appearing above the react burger menu */
     .image-text-overlay{
         z-index: 0;
     }
@@ -126,3 +153,37 @@ p:hover{
         
     
     }
+
+
+@media (max-width: 1255px) {
+    
+    .project-container{
+
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .project-container:nth-child(even){
+
+        display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+
+    .description-container{
+
+        padding-left: 0rem;
+        width: 100%;
+    
+    }
+
+    .project-container:nth-child(odd){
+
+        padding-left: 0rem;
+    
+    }
+    
+
+}

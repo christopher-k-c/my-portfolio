@@ -1,0 +1,52 @@
+
+.background-container{
+    max-width: 100%;
+    height: 25rem;
+    background-color:rgb(15, 11, 33);
+    margin: 12.5rem 0 12.5rem 0;
+}
+
+.introduction-container{
+
+    /* centers the contents */
+    margin: auto;
+    /* tells the landing-container to take up 80% the width available */
+    max-width: 100%;
+
+    font-family: 'inter';
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgba(102, 83, 255);
+    text-align: center;
+    background-color: #1A1540;
+    height: 25rem;
+    /* margin: 12.5rem 0 12.5rem 0; */
+
+
+    /* Centers all html elements inside of this container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle at 65% 35%, rgba(0, 0, 0, 0), rgb(0 0 0 / 82%)), url(https://grainy-gradients.vercel.app/noise.svg);     
+    filter: contrast(20%) brightness(900%);
+
+
+
+
+    /* or more uniform application of grain */
+    /* radial-gradient(at 55% 52%, rgba(0, 0, 0, 0), rgb(0 0 0 / 62%)), url(https://grainy-gradients.vercel.app/noise.svg) */
+}
+
+.intro{
+
+    max-width: 80%;
+    
+
+}
+
+.introduction-container p{
+
+
+}
+

@@ -6,6 +6,9 @@
     /* tells the landing-container to take up 80% the width available */
     max-width: 60%;
     padding-top: 8rem; 
+    padding-bottom: 0rem;
+
+
 }
 
 .col{
@@ -93,6 +96,7 @@
     bottom: 10rem;
     background-color: black;
 }
+
 
 @media (max-width: 1950px) {
 

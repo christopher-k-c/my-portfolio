@@ -11,6 +11,7 @@ export default function Landing() {
     <>
     
 
+      
       <div className="landing-container">
         <div className="col col-text">
           <div className="opening-rectangle"></div>
