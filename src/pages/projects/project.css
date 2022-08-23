@@ -26,6 +26,7 @@ flex-direction: row-reverse;
 
 .image-container{
     position: relative;
+    padding: 0%;
 }
 
 .image-container-two{
@@ -35,7 +36,8 @@ flex-direction: row-reverse;
 .image-container img{
 
     width: 100%;
-    height: auto;
+    height: 100%;
+    padding: 0%;
 
     
 
@@ -60,29 +62,24 @@ flex-direction: row-reverse;
 
 }
 
-.image-container{
-    /* position: relative; */
-    background-color: rgb(3, 3, 3, 1);
-
-
-}
 
 .image-container a{
 
-    background-color: white;
+    /* background-color: white; */
+    display: inline list-item;
+
+    list-style: none;
 
 }
 
 
 
-.image-container a:hover{
+/* .image-container a:hover{
 
     opacity: 0.3;
 
-    
-    
 
-}
+} */
 
 
 .rectangle{
@@ -98,7 +95,7 @@ flex-direction: row-reverse;
     color: rgba(102, 83, 255);
 }
 
-p{
+.description-container p{
 
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.5rem;
@@ -118,7 +115,7 @@ p:hover{
     /* bottom: -200%; */
     left: 0%;
     width: 100%;
-    height: 99.6%;
+    height: 100%;
     /* background-color: rgba(0, 0, 0, 0.819); */
     /* font-family: 'inter'; */
     font-family: 'IBM Plex Mono', monospace;
@@ -133,6 +130,21 @@ p:hover{
 
     background: radial-gradient(circle at 100% 100%, rgba(0, 0, 0, 0.4), rgba(22, 18, 55, 0.6)), url(https://grainy-gradients.vercel.app/noise.svg);     
     filter: contrast(120%) brightness(100%);
+    }
+
+
+
+    .image-text-overlay > a{
+        color: white;
+    }
+
+    .image-text-overlay > a:nth-child(1){
+        padding-right: 3rem;
+    }
+
+
+    .image-text-overlay > a:hover{
+        color: rgba(102, 83, 255);
     }
 
 
@@ -195,3 +207,8 @@ p:hover{
         font-size: 3rem;
     }
 }
+
+/* 
+.thumb-icon{
+    color: aquamarine;
+} */

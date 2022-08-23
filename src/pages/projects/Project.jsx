@@ -30,8 +30,17 @@ export default function Project() {
         
         <div className="image-container">
 
-          <a href={project.git}>
-            <span className="image-text-overlay"></span>
+          <a >
+            <span className="image-text-overlay">            
+              <a href={project.git} target="_blank"><img src='https://svgshare.com/i/kB9.svg' title='' />Repo</a>
+              <a href={project.site} target="_blank"><img src='https://svgshare.com/i/kB9.svg' title='' />Site</a>
+
+              {/* <a href={project.site} target="_blank"><img src='https://svgshare.com/i/kEV.svg' className="thumb-icon" title='' />Site</a> */}
+
+              {/* I THINK MEDIA QUERY IS EFFECTING THE HOVER AND SIZING OF IMAGE OVERLAY, ICONS, HOVER AND MORE  */}
+
+
+            </span>
             
             <img src={project.image} alt="project"/>
           </a>

@@ -24,12 +24,17 @@ export default function Navigation() {
         <nav>
           {/* Desktop navigation layout */}
           <div className='nav-container'>
-          <Link to="/my-portfolio"  ><h1>CHRISTOPHER CAREY</h1></Link>
+          <Link to="/my-portfolio"  >
+            <h1>CHRISTOPHER CAREY</h1>
+            {/* <svg className="title-name" viewBox="0 0 450 15">
+              <text  y="15">CHRISTOPHER CAREY</text>
+            </svg> */}
+          </Link>
             <ul className="hide-desktop-links">
-                <Link to="/about"><li >About</li></Link>
-                <Link to="/projects"><li href="#projects">Projects</li></Link>
-                <Link to="/experience"><li>Experience</li></Link>
-                <Link to="/contact"><li>Contact</li></Link>
+                <a href="#about"><li>About</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#experience"><li>Experience</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
           </div>
           {/* Responsive navigation layout */}
@@ -38,11 +43,13 @@ export default function Navigation() {
             <ul>
                 <Link to="/my-portfolio"><li>Home</li></Link>
                 <Link to="/about"><li>About</li></Link>
-                <Link to="/projects"><li>Projects</li></Link>
-                <Link to="/experience"><li>Experience</li></Link>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#experience"><li>Experience</li></a>
                 <Link to="/contact"><li>Contact</li></Link>
               
             </ul>
+
+            
             <hr/>
 
             
@@ -52,13 +59,7 @@ export default function Navigation() {
             </Menu>
           </div>
         </nav>
-          <Routes>
-            <Route path="/my-portfolio" element={<Landing />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/projects" element={<Projects/>}></Route>
-            <Route path="/experience" element={<Experience />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-          </Routes>
+
       </Router>
     </>
   )

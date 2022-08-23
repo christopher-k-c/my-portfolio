@@ -14,9 +14,9 @@
     max-width: 100%;
 
     font-family: 'inter';
-    font-size: 6em;
+    font-size: 3.7vw;
     font-weight: bolder;
-    color: rgba(102, 83, 255);
+    color: rgba(102, 83, 255, 0.7);
     text-align: center;
     background-color: #1A1540;
     height: 55rem;
@@ -28,8 +28,10 @@
     align-items: center;
     justify-content: center;
 
-    background: radial-gradient(circle at 5% 350%, rgba(0, 0, 0, 1), rgba(30, 0, 255, 0.2)), url(https://grainy-gradients.vercel.app/noise.svg);     
-    filter: contrast(20%) brightness(900%);
+    /* background: radial-gradient(circle at 5% 350%, rgba(0, 0, 0, 1), rgba(30, 0, 255, 0.2)), url(https://grainy-gradients.vercel.app/noise.svg);      */
+    /* background: radial-gradient(circle at 5% 350%, rgba(0, 0, 0, 1), rgba(30, 0, 255, 0.1)), url(https://grainy-gradients.vercel.app/noise.svg); */
+    background: radial-gradient(ellipse at top, rgb(22 18 55 / -40%), rgba(30, 0, 255, 0.3)), url(https://grainy-gradients.vercel.app/noise.svg);
+    /* filter: contrast(20%) brightness(900%); */
 
 
 
@@ -45,15 +47,19 @@
 
 }
 
+.introduction-container h1{
+    margin: 0 0 40px 0;
+}
+
 .introduction-container p{
 
-    font-size: 2rem;
-
+    font-size: 2.5rem;
+    color: #000000;
 
 }
 
 
-@media (max-width: 657px) {
+/* @media (max-width: 657px) {
 
     .introduction-container{
 
@@ -70,4 +76,24 @@
 
         padding-right: 0px;
     }
+} */
+
+
+/* @media (max-width: 1020px){
+    .introduction-container > .intro > h1{
+        font-size: 8rem;
+    }
 }
+
+@media (max-width: 700px){
+    .introduction-container > .intro > h1{
+        font-size: 6rem;
+    }
+}
+
+
+@media (max-width: 517px){
+    .introduction-container > .intro > h1{
+        font-size: 5rem;
+    }
+} */
