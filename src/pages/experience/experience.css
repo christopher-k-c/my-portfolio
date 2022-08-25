@@ -1,10 +1,17 @@
 
+.exp-content-container{
+
+    margin: auto;
+    max-width: 70%;
+}
+
+
 .experience-container{
     display: flex;
     /* centers the contents */
     margin: auto;
     /* tells the landing-container to take up 80% the width available */
-    max-width: 60%;
+    /* max-width: 0%; */
     /* Center Horizontally  */
     justify-content: center;
     /* Center Vertically */
@@ -30,11 +37,41 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .icon-container > span{
-    font-size: 1.7vw;
+    font-size: 1.5vw;
 }
 
 
+/* Experience List */
+
+.exp-details-container{
+    max-width: 80%;
+    margin: auto;
+}
+
+.exp-details-container > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style: none;
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-weight: 100; */
+    font-size: 1.5vw;
+}
+.exp-details-container > ul > li {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+.exp-details-container > ul > li > span{
+    
+    font-family: 'inter';
+    font-weight: 800;
+}

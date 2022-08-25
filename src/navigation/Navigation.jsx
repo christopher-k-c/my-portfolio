@@ -24,7 +24,7 @@ export default function Navigation() {
             </svg> */}
           </Link>
             <ul className="hide-desktop-links">
-                {/* <a href="#about"><li>About</li></a> */}
+                <a href="#about"><li>About</li></a>
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#experience"><li>Experience</li></a>
                 <a href="#contact"><li>Contact</li></a>
@@ -35,7 +35,7 @@ export default function Navigation() {
             <Menu>
             <ul>
                 <Link to="/my-portfolio"><li>Home</li></Link>
-                {/* <Link to="/about"><li>About</li></Link> */}
+                <Link to="/about"><li>About</li></Link>
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#experience"><li>Experience</li></a>
                 <Link to="/contact"><li>Contact</li></Link>

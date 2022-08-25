@@ -86,6 +86,7 @@ flex-direction: row-reverse;
     height: 2rem;
     width: 10rem;
     background-color: black;
+    margin-bottom: 2rem;
 }
 
 .description-container h1{
@@ -93,6 +94,7 @@ flex-direction: row-reverse;
     font-size: 5em;
     font-weight: 800;
     color: rgba(102, 83, 255);
+    margin-bottom: 2rem;
 }
 
 .description-container p{
@@ -102,6 +104,8 @@ flex-direction: row-reverse;
     font-weight: 800;
     color: #525252;
     padding-right: 2rem;
+    margin-bottom: 2rem;
+    
 }
 
 p:hover{

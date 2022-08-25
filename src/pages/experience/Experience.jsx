@@ -41,13 +41,37 @@ const allSkills = skillIcons.map((skill, index) => (
 
   return (
     <>
-      <div className="experience-container">
-        <div className="skills-container">
-          <div className="frontend">
-            {allSkills}
+
+      <div className="exp-content-container">
+
+
+        <div className="experience-container">
+          <div className="skills-container">
+            <div className="frontend">
+              {allSkills}
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="exp-details-container">
+
+<ul>
+
+  <li> <span>Front-end:</span> HTML, CSS, JavaScript, JQuery, React, Materialize and Bootstrap</li> 
+  <li><span>Backend:</span> Python, Django, Express, MongoDB, Mongoose, PostgreSQL</li> 
+  <li><span>Package Managers and Version Control:</span> Git, npm, pip, homebrew</li> 
+  <li><span>Server Runtime environments and Hosting:</span> Node.js and Heroku </li>
+  <li><span>Database and Api tools:</span> Compass, PGAdmin, Postman and QuickDBD</li>
+  <li><span>Business Skills:</span> Adobe Photoshop, Bridge, InDesign, Illustrator, Capture One Pro, Adobe Cloud, Excel, Outlook, Teams and Slack</li>
+  <li><span>Soft Skills:</span> Team and time Management and organization</li>
+  <li><span>Creative Skills:</span> Studio Photography, Creative and E-commerce Retouching, Art-working as well as Graphic Design</li>
+  <li><span>Methodologies:</span> {"Object Oriented Programming (OOP), RESTFUL APIs, Model View Controllers (MVC) and Model View Template (MVT), Responsive design, AJAX, Pair Programming"}</li>
+
+</ul>
+
+</div>
+
     </>
   )
 }

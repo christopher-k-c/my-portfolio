@@ -1,0 +1,92 @@
+
+
+
+.about-content-container{
+    margin: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    /* width: 300px;    */
+    height: auto;
+}
+
+.about-image-container{
+    /* background-color: rgb(222, 222, 222); */
+    border-style: solid;
+    height: 30rem;
+    width: 41rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12rem 0 0;
+    /* min-width: 425px; */
+    min-width: 23%;
+    
+}
+
+.about-image-container > img{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+/* padding: 0 200px 0 0 ; */
+padding-bottom: 10rem;
+
+}
+
+.content > .p-container > .date{
+    display: block;
+    font-weight: 800;
+}
+
+.content > .p-container > p{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+ 
+
+
+@media (max-width:1216px){
+
+
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .about-image-container{
+        width: 100%;
+        padding: 5rem;
+        margin-bottom: 3rem;
+
+        overflow: hidden;
+        /* padding: 13rem; */
+
+       
+
+
+    }
+
+    .content > .p-container > .date{
+        font-family: 'inter';
+        font-weight: 800;
+        padding-bottom: 2rem;
+        text-decoration: underline;
+    }
+
+
+    
+
+
+}
+
+@media (max-width:400px){
+
+}
