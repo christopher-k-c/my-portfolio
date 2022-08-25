@@ -1,16 +1,9 @@
 import React from 'react'
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   Link
 } from "react-router-dom";
 import './navigation.css';
-import Landing from '../pages/landing/Landing.jsx'
-import About from '../pages/about/About.jsx'
-import Projects from '../pages/projects/Projects.jsx'
-import Experience from '../pages/experience/Experience.jsx'
-import Contact from '../pages/contact/Contact.jsx'
 import { slide as Menu } from 'react-burger-menu'
 
 
@@ -31,7 +24,7 @@ export default function Navigation() {
             </svg> */}
           </Link>
             <ul className="hide-desktop-links">
-                <a href="#about"><li>About</li></a>
+                {/* <a href="#about"><li>About</li></a> */}
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#experience"><li>Experience</li></a>
                 <a href="#contact"><li>Contact</li></a>
@@ -42,7 +35,7 @@ export default function Navigation() {
             <Menu>
             <ul>
                 <Link to="/my-portfolio"><li>Home</li></Link>
-                <Link to="/about"><li>About</li></Link>
+                {/* <Link to="/about"><li>About</li></Link> */}
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#experience"><li>Experience</li></a>
                 <Link to="/contact"><li>Contact</li></Link>

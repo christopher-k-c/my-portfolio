@@ -6,6 +6,10 @@
     margin: 12.5rem 0 12.5rem 0;
 }
 
+#contact{
+    margin: 12.5rem 0 0 0;
+}
+
 .introduction-container{
 
     /* centers the contents */
@@ -57,43 +61,3 @@
     color: #000000;
 
 }
-
-
-/* @media (max-width: 657px) {
-
-    .introduction-container{
-
-        font-size: 3rem;
-    }
-    .introduction-container p{
-
-        font-size: 1rem;
-    
-    
-    }
-
-    .col{
-
-        padding-right: 0px;
-    }
-} */
-
-
-/* @media (max-width: 1020px){
-    .introduction-container > .intro > h1{
-        font-size: 8rem;
-    }
-}
-
-@media (max-width: 700px){
-    .introduction-container > .intro > h1{
-        font-size: 6rem;
-    }
-}
-
-
-@media (max-width: 517px){
-    .introduction-container > .intro > h1{
-        font-size: 5rem;
-    }
-} */
