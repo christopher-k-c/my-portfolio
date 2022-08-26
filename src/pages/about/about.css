@@ -50,10 +50,14 @@ padding-bottom: 10rem;
 }
  
 
+.p-container > ul > li{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
 
 @media (max-width:1216px){
-
-
 
     .content{
         display: flex;
@@ -68,10 +72,6 @@ padding-bottom: 10rem;
 
         overflow: hidden;
         /* padding: 13rem; */
-
-       
-
-
     }
 
     .content > .p-container > .date{
@@ -80,11 +80,6 @@ padding-bottom: 10rem;
         padding-bottom: 2rem;
         text-decoration: underline;
     }
-
-
-    
-
-
 }
 
 @media (max-width:400px){
