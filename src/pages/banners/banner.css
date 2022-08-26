@@ -84,3 +84,14 @@ color: rgba(102, 83, 255, 0.7);
 }
 
 
+
+@media (max-width: 565px){
+
+    .introduction-container h1{
+        font-size: 3rem;
+    }
+
+    .introduction-container p {
+        font-size: 1.5rem;
+    }
+}
