@@ -35,6 +35,8 @@ export default function Banner() {
 
     const bannerInfo = allBanners.map((project, index) => (
 
+
+
     <>
 
         {/* Render Contact as the footer with contact form else render all other banners*/}
@@ -81,6 +83,20 @@ export default function Banner() {
         {project.id === "experience" ? <Experience></Experience> : null}
         {/* Render About section */}
         {project.id === "about" ? <About></About> : null}
+
+
+        {/* Render the project thumbnails underneath the Project Banner */}
+
+
+        {project.id === "projects" ? console.log("Hello") : 
+
+        project.id === "experience" ? console.log("Worl") : 
+
+        project.id === "about" ? console.log("y`") : 
+
+        null}
+
+        
 
         
 

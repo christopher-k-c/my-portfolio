@@ -12,6 +12,7 @@
 
     /* position: relative; */
 
+
     
 }
 
@@ -142,8 +143,14 @@ p:hover{
         color: white;
     }
 
+    .image-text-overlay > a > img{
+        
+        color: white;
+    }
+
     .image-text-overlay > a:nth-child(1){
-        padding-right: 3rem;
+        /* padding-right: 3rem; */
+        padding: 0rem 3rem 2.5rem 0rem;
     }
 
 
@@ -151,6 +158,46 @@ p:hover{
         color: rgba(102, 83, 255);
     }
 
+
+
+    @media (max-width: 1255px) {
+
+
+        .bm-menu{
+            color: aqua;
+        }
+    
+        .project-container{
+    
+            display: flex;
+            flex-direction: column-reverse;
+            
+    
+        }
+    
+        .project-container:nth-child(even){
+    
+            display: flex;
+            flex-direction: column-reverse;
+    
+    
+        }
+    
+        .description-container{
+    
+            padding-left: 0rem;
+            width: 100%;
+        
+        }
+    
+        .project-container:nth-child(odd){
+    
+            padding-left: 0rem;
+        
+        }
+        
+    
+    }
 
     /* .image-text-overlay:hover{
      display: none;   
@@ -172,38 +219,7 @@ p:hover{
     }
 
 
-@media (max-width: 1255px) {
-    
-    .project-container{
 
-        display: flex;
-        flex-direction: column-reverse;
-
-    }
-
-    .project-container:nth-child(even){
-
-        display: flex;
-        flex-direction: column-reverse;
-
-
-    }
-
-    .description-container{
-
-        padding-left: 0rem;
-        width: 100%;
-    
-    }
-
-    .project-container:nth-child(odd){
-
-        padding-left: 0rem;
-    
-    }
-    
-
-}
 
 
 @media (max-width: 405px) {
