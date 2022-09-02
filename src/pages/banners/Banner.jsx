@@ -6,6 +6,42 @@ import About from '../about/About'
 
 export default function Banner() {
 
+    const skillIcons = [
+        {'class': 'devicon-html5-plain', 'span': 'HTML'},
+        {'class': 'devicon-css3-plain', 'span': 'CSS'},
+        {'class': 'devicon-javascript-plain', 'span': 'JAVASCRIPT'},
+        {'class': 'devicon-jquery-plain', 'span': 'JQUERY'},
+        {'class': 'devicon-react-original', 'span': 'REACT'},
+        {'class': 'devicon-bootstrap-plain', 'span': 'BOOTSTRAP'},
+        {'class': 'devicon-markdown-original', 'span': 'MARKDOWN'},
+        {'class': 'devicon-tailwindcss-original-wordmark', 'span': 'TAILWIND'},
+        {'class': 'devicon-python-plain', 'span': 'PYTHON'},
+        {'class': 'devicon-django-plain', 'span': 'DJANGO'},
+        {'class': 'devicon-express-original', 'span': 'EXPRESS'},
+        {'class': 'devicon-mongodb-plain', 'span': 'MONGODB'},
+        {'class': 'devicon-postgresql-plain', 'span': 'POSTGRESQL'},
+        {'class': 'devicon-bash-plain', 'span': 'BASH'},
+        {'class': 'devicon-git-plain', 'span': 'GIT'},
+        {'class': 'devicon-github-original', 'span': 'GITHUB'},
+        {'class': 'devicon-npm-original-wordmark', 'span': 'NPM'},
+        {'class': 'devicon-vscode-plain', 'span': 'VS CODE'},
+        {'class': 'devicon-nodejs-plain', 'span': 'NODE.JS'},
+        {'class': 'devicon-heroku-original', 'span': 'HEROKU'},
+        {'class': 'devicon-photoshop-plain', 'span': 'PHOTOSHOP'},
+        {'class': 'devicon-illustrator-plain', 'span': 'ILLUSTRATOR'},
+        {'class': 'devicon-xd-plain', 'span': 'XD'},
+        {'class': 'devicon-slack-plain', 'span': 'SLACK'},
+        {'class': 'devicon-trello-plain', 'span': 'TRELLO'}
+      ]
+      
+      const allSkills = skillIcons.map((skill, index) => (
+        <>
+          <div className="icon-container" key={index}>
+              <i className={skill.class}></i>
+              <span>{skill.span}</span>  
+          </div>    
+        </>
+      ))
 
 
     const allBanners = [
@@ -39,28 +75,26 @@ export default function Banner() {
 
     <>
 
-        {/* Render Contact as the footer with contact form else render all other banners*/}
-        {project.id === "contact" ? 
+        {project.id === 'about' ? 
 
+        <> 
         <div className="background-container" id={project.id} key={index}>
             <div className="introduction-container">
                 <div className="intro">
-                    
+                    {/* <div className="opening-rectangle"></div> */}
                     <h1>{project.bannerName}</h1>
-
-                    <div className="social-container">
-                        <a href='https://github.com/christopher-k-c?tab=repositories' target="_blank"><h3> GitHub </h3></a>
-                        <a href='https://www.linkedin.com/in/chriskcarey/' target="_blank"><h3 > LinkedIn </h3></a>
-                    </div>
-
-                    {/* <a href='https://www.linkedin.com/in/chriskcarey/' target="_blank"><img src='https://svgshare.com/i/k93.svg' title='my_linkedin' style={{'width': '100px'}}/></a>
-                    <a href='https://github.com/christopher-k-c?tab=repositories' target="_blank"><img src='https://svgshare.com/i/kB9.svg' title='' style={{'width': '100px'}}/></a> */}
-
+                    <p>{project.bannerDescription}</p>
                 </div>
             </div>
         </div>
-        
+
+            <About></About>
+        </>
+    
         : 
+        project.id === "projects" ? 
+
+        <>
         
         <div className="background-container" id={project.id} key={index}>
             <div className="introduction-container">
@@ -71,30 +105,73 @@ export default function Banner() {
                 </div>
             </div>
         </div>
+
+        <Projects></Projects>
         
         
+        </>
+        
+        :
+
+        project.id === "experience" ? 
+        
+        <>
+        
+        <div className="background-container" id={project.id} key={index}>
+            <div className="introduction-container">
+                <div className="intro">
+                    {/* <div className="opening-rectangle"></div> */}
+                    <h1>{project.bannerName}</h1>
+                    {/* <p>{project.bannerDescription}</p> */}
+
+                    <div className="exp-content-container">
+                        <div className="experience-container">
+                            <div className="skills-container">
+                                <div className="frontend">
+                                    {allSkills}
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
+
+                    
+                </div>
+            </div>
+        </div>
+
+        <Experience></Experience>
+        
+        </>
+
+        
+        :
+        project.id === "contact" ? 
+
+        <div className="background-container" id={project.id} key={index}>
+            <div className="introduction-container">
+                <div className="intro">
+                    
+                    <h1>{project.bannerName}</h1>
+        
+                    <div className="social-container">
+                        <a href='https://github.com/christopher-k-c?tab=repositories' target="_blank"><h3> GitHub </h3></a>
+                        <a href='https://www.linkedin.com/in/chriskcarey/' target="_blank"><h3 > LinkedIn </h3></a>
+                    </div>
+        
+                    {/* <a href='https://www.linkedin.com/in/chriskcarey/' target="_blank"><img src='https://svgshare.com/i/k93.svg' title='my_linkedin' style={{'width': '100px'}}/></a>
+                    <a href='https://github.com/christopher-k-c?tab=repositories' target="_blank"><img src='https://svgshare.com/i/kB9.svg' title='' style={{'width': '100px'}}/></a> */}
+        
+                </div>
+            </div>
+        </div>
+
+        :
+
+        null
         }
 
-        
-        
-        {/* Render the project thumbnails underneath the Project Banner */}
-        {project.id === "projects" ? <Projects></Projects> : null}
-        {/* Render my skills underneath the Experience Banner */}
-        {project.id === "experience" ? <Experience></Experience> : null}
-        {/* Render About section */}
-        {project.id === "about" ? <About></About> : null}
 
-
-        {/* Render the project thumbnails underneath the Project Banner */}
-
-
-        {project.id === "projects" ? console.log("Hello") : 
-
-        project.id === "experience" ? console.log("Worl") : 
-
-        project.id === "about" ? console.log("y`") : 
-
-        null}
 
         
 

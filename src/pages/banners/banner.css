@@ -44,6 +44,9 @@
     /* radial-gradient(at 55% 52%, rgba(0, 0, 0, 0), rgb(0 0 0 / 62%)), url(https://grainy-gradients.vercel.app/noise.svg) */
 }
 
+
+
+
 .intro{
 
     max-width: 80%;
@@ -94,4 +97,42 @@ color: rgba(102, 83, 255, 0.7);
     .introduction-container p {
         font-size: 1.5rem;
     }
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#experience > .introduction-container{
+
+    width: 100%;    
+    height: 134rem;
+
+    flex: 1;
+}
+
+#experience > .introduction-container > .intro > h1{
+    padding: 20px 0 0 0 ;
+    margin: 0;
+    
+}
+
+.icon-container{
+
+    color: #1A1540;
+}
+
+.icon-container:hover{
+
+    color: rgba(102, 83, 255, 0.7);
+   
+}
+
+.icon-container:hover > span{
+
+    color: black;
+   
 }
