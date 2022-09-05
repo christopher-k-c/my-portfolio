@@ -12,7 +12,7 @@ export default function Landing() {
     
 
       
-      <div className="landing-container">
+      <div className="landing-container" id="landing">
         <div className="col col-text">
           <div className="opening-rectangle"></div>
           <h1>I'm a Junior <span>Software Engineer</span></h1>

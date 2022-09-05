@@ -17,12 +17,12 @@ export default function Navigation() {
         <nav>
           {/* Desktop navigation layout */}
           <div className='nav-container'>
-          <Link to="/my-portfolio"  >
+          <a href="#landing"  >
             <h1>CHRISTOPHER CAREY</h1>
             {/* <svg className="title-name" viewBox="0 0 450 15">
               <text  y="15">CHRISTOPHER CAREY</text>
             </svg> */}
-          </Link>
+            </a>
             <ul className="hide-desktop-links">
                 <a href="#about"><li>About</li></a>
                 <a href="#projects"><li>Projects</li></a>
@@ -34,12 +34,10 @@ export default function Navigation() {
           <div className='responsive-menu-container'>
             <Menu>
             <ul>
-                <Link to="/my-portfolio"><li>Home</li></Link>
-                <Link to="/about"><li>About</li></Link>
+            <a href="#about"><li>About</li></a>
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#experience"><li>Experience</li></a>
-                <Link to="/contact"><li>Contact</li></Link>
-              
+                <a href="#contact"><li>Contact</li></a>
             </ul>
 
             

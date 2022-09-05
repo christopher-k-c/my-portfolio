@@ -146,16 +146,21 @@ p:hover{
     .image-text-overlay > a > img{
         
         color: white;
+
+        width: 90px;
+        display: flex;
+        padding: 1rem;
     }
 
-    .image-text-overlay > a:nth-child(1){
-        /* padding-right: 3rem; */
-        padding: 0rem 3rem 2.5rem 0rem;
-    }
 
 
     .image-text-overlay > a:hover{
         color: rgba(102, 83, 255);
+    }
+
+
+    .image-text-overlay > a:hover {
+        background-color: rgba(6, 6, 6, 0.126);
     }
 
 

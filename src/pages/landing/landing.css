@@ -4,7 +4,7 @@
     /* centers the contents */
     margin: auto;
     /* tells the landing-container to take up 80% the width available */
-    max-width: 80%;
+    max-width: 60%;
     padding-top: 8rem; 
     padding-bottom: 0rem;
 
@@ -42,7 +42,7 @@
 
 .col-text{
     /* position:relative; */
-    /* padding-right: 100px; */
+    padding-right: 100px;
 }
 
 .opening-rectangle{
@@ -91,7 +91,7 @@
     position: absolute;
     z-index: 1;
     height: 4rem;
-    width: 200%;
+    width: 189%;
     right: 10rem;
     bottom: 10rem;
     background-color: black;
@@ -137,6 +137,7 @@
 @media (max-width: 1173px) {
     .landing-container{
         flex-direction: column;
+        max-width: 80%;
     }
 
 
@@ -172,6 +173,10 @@
         width: 100%;
         height: auto;
         margin: 5rem 0 5rem 0;
+    }
+
+    .col-text{
+        padding-right: 0px;
     }
 
 
