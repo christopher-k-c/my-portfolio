@@ -24,10 +24,10 @@ export default function Navigation() {
             </svg> */}
             </a>
             <ul className="hide-desktop-links">
-                <a href="#about"><li>About</li></a>
-                <a href="#projects"><li>Projects</li></a>
-                <a href="#experience"><li>Experience</li></a>
-                <a href="#contact"><li>Contact</li></a>
+                <a href="#about"><li>ABOUT</li></a>
+                <a href="#projects"><li>PROJECTS</li></a>
+                <a href="#experience"><li>EXPERIENCE</li></a>
+                <a href="#contact"><li>CONTACT</li></a>
             </ul>
           </div>
           {/* Responsive navigation layout */}

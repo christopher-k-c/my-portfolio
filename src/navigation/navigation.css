@@ -47,9 +47,14 @@ nav .nav-container ul li{
     align-items: center;
     padding-left: 2rem;
     margin: 0;
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 300;
 
+}
+
+nav .nav-container ul li:hover{
+color: #6653FF;
 }
 
 a:visited{
