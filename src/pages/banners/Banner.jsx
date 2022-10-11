@@ -49,18 +49,19 @@ export default function Banner() {
         {
             'id': 'about', 
             'bannerName': `{ About }`, 
-            'bannerDescription': `I am a recent General Assembly, Software Engineering Immersive Graduate, with 10 years of combined experience in e-commerce post-production and management. My affinity for coding began with automation in Adobe Photoshop, sparking my ambition to pursue a career in development and ultimately my enrolment with General Assembly.
+            'bannerDescription': `
+            I am a recent General Assembly, Software Engineering Immersive Graduate with ten years of combined experience in e-commerce post-production and management. My affinity for coding began with automation in Adobe Photoshop, sparking my ambition to pursue a career in development and, ultimately, my enrolment with General Assembly.
             `
         },
         {
             'id': 'projects', 
             'bannerName': `{ Projects }`, 
-            'bannerDescription': `I received 13 weeks of training in full-stack web development with General Assembly's, Software Engineering Immersive course. Through a combination of lectures and projects, working individually and in groups, I have furthered my understanding in programmatic thinking and web development. Here are my four main projects...`
+            'bannerDescription': `I received 13 weeks of training in full-stack web development with General Assembly's Software Engineering Immersive course. I have furthered my understanding of programmatic thinking and web development through a combination of lectures and projects, working individually and in groups. Here are my four main projects...`
         },
         {
             'id': 'experience', 
             'bannerName': `{ Experience }`, 
-            'bannerDescription': `This section is a reflection of the skills that i have developed whilst with General Assembly and in my previous career. `
+            'bannerDescription': `This section reflects the technologies I have worked with and the skills I developed through further education and the workplace. `
         },
         {
             'id': 'contact', 

@@ -17,7 +17,7 @@ export default function Landing() {
           <div className="opening-rectangle"></div>
           <h1>I'm a Junior <span>Software Engineer</span></h1>
           <h4>2022 <span>General Assembly Graduate</span> based in London with a background in E-commerce post-production and management</h4>
-          <p>Check out my <span>projects</span></p>
+          <p>Check out my <a href="#projects"><span>projects</span></a></p>
           <div className="closing-rectangle"></div>
         </div>
         <div className="col col-image">
