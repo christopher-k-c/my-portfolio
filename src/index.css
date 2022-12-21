@@ -2,6 +2,15 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
+:root {
+  /* Font Colors */
+  --primary-font-color: rgba(102, 83, 255);
+  --secondary-font-color: #525252;
+  --tertiary-font-color: rgb(0, 0, 0);
+
+  
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

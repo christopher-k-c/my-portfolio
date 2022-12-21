@@ -59,7 +59,7 @@
 }
 
 .col h1 span{
-    color: rgba(102, 83, 255);
+    color: var(--primary-font-color)
 }
 
 .col h4{
@@ -67,7 +67,7 @@
     padding: 2rem 0 2rem 0;
     font-size: 3rem;
     font-weight: 100;
-    color: #525252;
+    color: var(--secondary-font-color)
 
 }
 
